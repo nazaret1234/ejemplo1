@@ -1,0 +1,39 @@
+body{
+    background-image:url(https://i.imgsafe.org/d5db9e55f3.jpg);
+  background-attachment:fixed;
+  background-position:150px 500px;
+  background-size:cover;
+  
+}
+li {
+  list-style-type:none;
+  display:inline-block;
+  /* hay que usar display para colocar cuadros horizontalmente */
+  /* display: ________ */
+
+   }
+
+.cuadro {
+  border:8px ridge beige;
+  box-shadow: 5px 5px 10px #FFF;
+  width:250px;
+  height:390px;
+  margin:25px;
+  -webkit-filter:sepia(1);
+          filter:sepia(1);
+}
+
+/* Cuando pasamos el ratón por el cuadro... */
+.cuadro:hover {
+  /* Lo ponemos en sepia completamente (1). Los valores permitidos van desde el
+     rango 0 (foto original) hasta 1 (foto sepia completamente), pasando por 0.5
+     (al 50% de cada uno). También se permiten poner valores en porcentajes (0%, 50%, 100%...)*/
+ 
+    -webkit-filter:sepia(0);
+ 
+            filter:sepia(0);
+  opacity:0.80;
+  -webkit-transition:all 2s linear;
+  transition: all 2s linear;
+  
+}
